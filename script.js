@@ -137,7 +137,7 @@ async function loadGallery() {
             const href = a.getAttribute('href');
             if (href.match(/\.(jpe?g|png|gif)$/i)) {
                 const img = document.createElement('img');
-                img.src = 'img/' + href;
+                img.src = 'Img/' + href;
                 img.alt = href;
                 img.loading = 'lazy';
                 gallery.appendChild(img);
@@ -183,4 +183,5 @@ async function loadGallery() {
 
     // Keyboard navigation
     document.addEventListener('keydown', handleKeyDown);
+
 });
