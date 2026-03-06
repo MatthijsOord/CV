@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Matthijs van Oord</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Matthijs van Oord</h1>
+        <address>
+            <p>Woonplaats: Bilthoven, Utrecht</p>
+            <p>Telefoon: <a href="tel:+31638072092">+31 06 38 07 20 92</a></p>
+            <p>E-mail: <a href="mailto:Matthijscoord@gmail.com">Matthijscoord@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://nl.linkedin.com/in/matthijs-van-oord-46376229b" target="_blank" rel="noopener">LinkedIn Profiel</a></p>
+        </address>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#profiel">Profiel</a></li>
+            <li><a href="#werkervaring">Werkervaring</a></li>
+            <li><a href="#band">Band</a></li>
+            <li><a href="#opleiding">Opleiding</a></li>
+            <li><a href="#vaardigheden">Vaardigheden</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="profiel">
+            <h2>Profiel</h2>
+            <div class="profile-header">
+                <img src="profile.jpg" alt="Portret van Matthijs van Oord" class="profile-photo">
+                <p>Ik ben een gedreven en leergierig persoon. Wanneer ik ergens aan begin, pak ik dit serieus en zorgvuldig aan. Daarnaast houd ik ervan om creatief bezig te zijn en sta ik open voor nieuwe ideeën en uitdagingen.</p>
+            </div>
+        </section>
+        <section id="werkervaring">
+            <h2>Werkervaring</h2>
+            <article>
+                <h3>Assistent (parttime) – Van Oord Auto B.V., Maarssen</h3>
+                <p>Juni 2023 – heden</p>
+                    <p>- Ondersteunen van dagelijkse bedrijfsactiviteiten</p>
+                    <p>- Klanten te woord staan en helpen bij vragen</p>
+                    <p>- Samenwerken binnen een team</p>
+                    <p>- Schoonmaken en onderhouden van auto’s</p>
+                    <p>- Verantwoordelijk voor orde en netheid in werkruimte</p>
+            </article>
+            <article>
+                <h3>Muzikant (parttime) - Friends with Benefits Band, Utrecht</h3>
+                <p>November 2021 - heden</p>
+                    <p>- Klant contact</p>
+                    <p>- Samenwerken binnen een team</p>
+                    <p>- Afstemmen en overleggen met meerdere partijen (techniek, locatie, klant en band) om evenementen succesvol te realiseren</p>
+                    <p>- Activiteiten plannen en budgetteren</p>
+                    <p>- Verantwoordelijk voor techniek en inregeling van eigen apparatuur</p>
+                    <p>- <a href="https://friendswithbenefitsband.nl" target="_blank" rel="noopener noreferrer">Verantwoordelijk voor website beheer</a></p>
+            </article>
+            <article>
+                <h3>Poetser (parttime) – Henri en Herman, De Meern</h3>
+                <p>Januari 2021 – mei 2023</p>
+                    <p>- Schoonmaken en onderhouden van auto’s</p>
+                    <p>- Verantwoordelijk voor orde en netheid in werkruimte</p>
+            </article>
+            <article>
+                <h3>Poetser (parttime) – Van Oord Automotive, De Meern</h3>
+                <p>2016 – januari 2021</p>
+                    <p>- Schoonmaken en onderhouden van auto’s</p>
+                    <p>- Verantwoordelijk voor orde en netheid in werkruimte</p>
+            </article>
+        </section>
+        <section id="band">
+            <h2>Band</h2>
+            <p>Een van mijn grote passies is muziek. Als muzikant treed ik geregeld op samen met mijn band. Hier zijn enkele foto's van onze optredens en sessies.</p>
+            <div class="photo-gallery">
+                <!-- Afbeeldingen worden dynamisch geladen via script.js -->
+            </div>
+        </section>
+        <section id="opleiding">
+            <h2>Opleiding</h2>
+                <p>Bachelor of Science, BS, Information Science/Studies – Universiteit Utrecht (2022 – heden)</p>
+                <p>VWO – Het Nieuwe Lyceum (2020 – 2022)</p>
+                <p>HAVO – Het Nieuwe Lyceum (2018 – 2020)</p>
+                <p>VMBO – Oranje Nassau School Bilthoven (2014 – 2018)</p>
+        </section>
+        <section id="vaardigheden">
+            <h2>Vaardigheden</h2>
+            <h4>Talen</h3>
+            <ul>
+                <li>Nederlands: moedertaal</li>
+                <li>Engels: goed</li>
+            </ul>
+            <br>
+            <h4>Programmeertalen</h4>
+            <ul>
+                <li>Python</li>
+                <li>HTML</li>
+                <li>JavaScript</li>
+                <li>CSS</li>
+                <li>XML</li>
+                <li>PHP</li>
+            </ul>
+            <br>
+            <h4>Modelleertalen</h4>
+            <ul>
+                <li>UML</li>
+                <li>ERD</li>
+                <li>BPMN</li>
+                <li>Archimate</li>
+            </ul>
+            <br>
+            <h4>Grafisch Ontwerp</h4>
+            <ul>
+                <li>Photoshop</li>
+                <li>Premiere</li>
+            </ul>
+        </section>
+    </main>
+    <div id="imageModal" class="modal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-content">
+            <span class="close" aria-label="Sluit modal">&times;</span>
+            <img id="modalImage" src="" alt="">
+            <button id="prevBtn" aria-label="Vorige foto">&larr;</button>
+            <button id="nextBtn" aria-label="Volgende foto">&rarr;</button>
+        </div>
+    </div>
+    <footer>
+        <button id="printButton" aria-label="Print CV">Print CV</button>
+        <p>&copy; 2026 Matthijs van Oord</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
