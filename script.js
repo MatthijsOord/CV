@@ -113,7 +113,7 @@ async function loadGallery() {
             console.log('Loaded gallery manifest:', list);
             list.forEach(file => {
                 const img = document.createElement('img');
-                img.src = 'img/' + file;
+                img.src = 'Img/' + file;
                 img.alt = file;
                 img.loading = 'lazy';
                 gallery.appendChild(img);
@@ -127,7 +127,7 @@ async function loadGallery() {
 
     // if manifest fails or empty, fall back to directory listing
     try {
-        const res = await fetch('img/');
+        const res = await fetch('Img/');
         if (!res.ok) throw new Error('Cannot fetch directory (perhaps running via file://?).');
         const text = await res.text();
         const parser = new DOMParser();
@@ -153,7 +153,7 @@ async function loadGallery() {
         console.warn('Directory load failed, using fallback list:', err);
         fallbackFiles.forEach(file => {
             const img = document.createElement('img');
-            img.src = 'img/' + file;
+            img.src = 'Img/' + file;
             img.alt = file;
             img.loading = 'lazy';
             gallery.appendChild(img);
@@ -185,3 +185,4 @@ async function loadGallery() {
     document.addEventListener('keydown', handleKeyDown);
 
 });
+
